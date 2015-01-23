@@ -3,15 +3,12 @@ import Ember from 'ember';
 export default Ember.Component.extend({
 focus: false,
 didInsertElement: function() {
-console.log('did insert element invoked');
-var thing = this.$('textarea');
-console.log(thing);
+console.log('did insert');
 },
 willDestroyElement: function() {
-console.log('will destroy invoked');
-this.$('textarea').destroy();
+console.log('willdestroy');
 },
 keyUp: function() {
-console.log('keyup invoked');
+console.log('keyup');
 }
 }); 
